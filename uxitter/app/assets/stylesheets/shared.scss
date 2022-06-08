@@ -1,0 +1,63 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: #222;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  display: flex;
+  top: 0;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.gap {
+  margin: 5rem;
+  text-align: center;
+  font-size: 96px;
+}
+
+.title-block {
+  margin: 5rem;
+  text-align: center;
+}
+
+.main-section {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.btn {
+  background-color: greenyellow;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  border: none;
+}

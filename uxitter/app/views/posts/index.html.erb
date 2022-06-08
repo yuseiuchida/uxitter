@@ -1,0 +1,30 @@
+<div class="title-block">
+  <div class="title"><h1>いちらん</h1></div>
+</div>
+
+<div class="main-section">
+  <div class="post-list">
+    <% @posts.each do |post| %>
+      <div class="post-card after">
+        <div class="post-card-body">
+          <div class="post-name">
+            <% if post.name.present? %>
+              <%= post.name %>
+            <% else %>
+              ゲスト
+            <% end %>
+          </div>
+          <div class="post-content"><%= link_to "#{post.after}", post_path(post) %></div>
+        </div>
+        <div class="post-card-footer">
+          <div class="post-action" id="post_<%= post.id %>"><%= post.count %></div>
+          <div class="post-action">
+            <%= link_to good_post_path(post), method: :post, remote: true do %>
+              <i class="fas fa-heart"></i>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

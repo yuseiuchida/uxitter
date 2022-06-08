@@ -1,0 +1,103 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.post-form {
+  text-align: center;
+  width: 80%;
+}
+
+.form {
+  margin-top: 1rem;
+  font-size: larger;
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  border: none;
+  font-size: 1rem;
+}
+
+.form-item {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.form-name {
+  height: auto;
+  min-height: 2rem;
+}
+
+.form-content {
+  height: auto;
+  min-height: 8rem;
+  resize: none;
+}
+
+.label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  font-size: larger;
+}
+
+.submit {
+  text-align: center;
+}
+
+textarea {
+  visibility: visible;
+}
+
+
+
+.post-list {
+  display: flex;
+  width: 100rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.before {
+  background-color: rgba(106, 106, 106, 0.281);
+}
+
+.after {
+  background-color: #fff;
+}
+
+.post-card {
+  margin: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-card-body {
+  width: 80%;
+}
+
+.post-card-footer {
+  width: 20%;
+}
+
+.post-name {
+  margin-left: 1rem;
+  font-weight: bolder;
+}
+
+.post-content {
+  margin: 1rem;
+  padding: 0.25rem;
+  font-size: larger;
+  font-weight: bolder;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.post-action {
+  margin: 1rem;
+  text-align: center;
+  font-size: large;
+}

@@ -1,0 +1,47 @@
+<div class="title-block">
+  <div class="title"><h1>しょーさい</h1></div>
+</div>
+
+<div class="main-section">
+  <div class="post-list">
+    <div class="post-card before">
+      <div class="post-card-body">
+        <div class="post-name">
+          <% if @post.name.present? %>
+            <%= @post.name %>
+          <% else %>
+            ゲスト
+          <% end %>
+        </div>
+        <div class="post-content"><%= @post.before %></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gap"><i class="fas fa-arrow-alt-circle-down"></i></div>
+
+<div class="main-section">
+  <div class="post-list">
+    <div class="post-card after">
+      <div class="post-card-body">
+        <div class="post-name">
+          <% if @post.name.present? %>
+            <%= @post.name %>
+          <% else %>
+            ゲスト
+          <% end %>
+        </div>
+        <div class="post-content"><%= @post.after %></div>
+      </div>
+      <div class="post-card-footer">
+        <div class="post-action" id="post_<%= @post.id %>"><%= @post.count %></div>
+        <div class="post-action">
+          <%= link_to good_post_path(@post), method: :post, remote: true do %>
+            <i class="fas fa-heart"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

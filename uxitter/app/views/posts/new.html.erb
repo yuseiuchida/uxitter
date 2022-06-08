@@ -1,0 +1,21 @@
+<div class="title-block">
+  <div class="title"><h1>へんかん</h1></div>
+</div>
+
+<div class="main-section">
+  <div class="post-form">
+    <%= form_with model: @post, url: posts_path, local: true do |f| %>
+      <div class="form-item">
+        <%= f.label :name, "ニックネーム", class: "label" %>
+        <%= f.text_field :name, class: "form form-name" %>
+      </div>
+      <div class="form-item">
+        <%= f.label :before, "テキスト", class: "label" %>
+        <%= f.text_area :before, class: "form form-content" %>
+      </div>
+      <div class="submit">
+        <%= f.submit '変換ます', class: "btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
